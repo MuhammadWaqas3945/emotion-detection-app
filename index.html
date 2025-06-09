@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Emotion Detection Web App</title>
+</head>
+<body>
+    <h1>Emotion Detection</h1>
+    <form method="POST" action="/">
+        <input type="text" name="text" placeholder="Enter text to analyze" value="{{ text }}" required />
+        <button type="submit">Detect Emotion</button>
+    </form>
+
+    {% if result %}
+        <h2>Result:</h2>
+        <p><strong>Dominant Emotion:</strong> {{ result.dominant_emotion }}</p>
+        <ul>
+            <li>Anger: {{ result.anger }}</li>
+            <li>Disgust: {{ result.disgust }}</li>
+            <li>Fear: {{ result.fear }}</li>
+            <li>Joy: {{ result.joy }}</li>
+            <li>Sadness: {{ result.sadness }}</li>
+        </ul>
+    {% endif %}
+</body>
+</html>

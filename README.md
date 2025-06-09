@@ -1,15 +1,16 @@
 # Emotion Detection Web App
 
-This is a Flask-based web application that uses IBM Watson NLU API to detect emotions from user input text.
+## 📌 Description
 
-## Features
-- User can submit text through a form
-- The app displays the detected emotions and their confidence scores
+This is a Flask-based web application that detects the emotional tone (e.g., joy, sadness, anger) in a user's input text. It uses IBM Watson Natural Language Understanding (NLU) API to analyze and return emotions.
 
-## Technologies
+## 🛠️ Technologies Used
+
+- Python
 - Flask
+- IBM Watson NLP API
 - HTML/CSS
-- IBM Watson Natural Language Understanding
+- Static Code Analysis Tools: Pylint, Flake8
 
-## Setup
-1. Install requirements:
+## 📁 Project Structure
+
